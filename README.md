@@ -51,20 +51,20 @@ The core idea is the **Two-Tower architecture**:
 
 The complete pipeline in the notebook follows this flow:
 
-``` mermaid
+```mermaid
 flowchart LR
-    A[Ratings Data] --> B[Data Cleaning & Validation]
-    B --> C[Filter Users & Movies]
-    C --> D[Create Positive Labels]
-    D --> E[User & Movie Encoding]
-    E --> F[Genre Feature Engineering]
-    F --> G[Train / Validation / Test Split]
-    G --> H[Negative Sampling]
-    H --> I[Two-Tower Neural Network]
-    I --> J[Model Training]
-    J --> K[Top-K Candidate Ranking]
-    K --> L[Precision@K / Recall@K / Hit Rate@K / NDCG@K]
-    L --> M[Movie Recommendations]
+    A["Ratings Data"] --> B["Data Cleaning and Validation"]
+    B --> C["Filter Users and Movies"]
+    C --> D["Create Positive Labels"]
+    D --> E["User and Movie Encoding"]
+    E --> F["Genre Feature Engineering"]
+    F --> G["Train / Validation / Test Split"]
+    G --> H["Negative Sampling"]
+    H --> I["Two-Tower Neural Network"]
+    I --> J["Model Training"]
+    J --> K["Top-K Candidate Ranking"]
+    K --> L["Ranking Metrics"]
+    L --> M["Movie Recommendations"]
 ```
 
 ### 1. Data preparation
@@ -504,7 +504,7 @@ large.
 ------------------------------------------------------------------------
 
 # 🎯 Final Takeaway
- 
+
 This project started with a simple question --- **"What movies should I
 recommend to this user?"** --- and turned it into a complete neural
 recommendation pipeline.
