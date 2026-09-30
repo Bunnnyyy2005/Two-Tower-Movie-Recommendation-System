@@ -504,7 +504,7 @@ large.
 ------------------------------------------------------------------------
 
 # 🎯 Final Takeaway
-
+ 
 This project started with a simple question --- **"What movies should I
 recommend to this user?"** --- and turned it into a complete neural
 recommendation pipeline.
